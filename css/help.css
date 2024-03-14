@@ -1,0 +1,34 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  flex-direction: column;
+  background-color: var(--c2);
+  color: var(--c1);
+}
+.whatsapp-Btn {
+  height: 120px;
+  width: 120px;
+  font-size: 3.5rem;
+  margin: 50px;
+  background-color: green;
+  color: var(--c1);
+  cursor: pointer;
+  transition: 0.4s;
+  border: 1px solid white;
+  padding-top: 10px;
+  border-radius: 50%;
+}
+.whatsapp-Btn:hover {
+  scale: 1.1;
+  background-color: var(--c1);
+  color: green;
+}
+@media (max-width: 888px) {
+  .container{
+    font-size: 0.75rem;
+  }
+}

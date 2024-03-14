@@ -1,0 +1,187 @@
+:root {
+  --mc: #027fff;
+  --sc: #2c3e50;
+  --c1: #faf7ef;
+  --c2: #072a40;
+  --c3: #188ca5;
+  --c4: #19b7bd;
+  --c5: #76d668;
+  --c6: #8baccd;
+  --c7: #ff0000;
+  font-size: 20px;
+}
+* {
+  font-family: "Vazirmatn", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--c2);
+}
+.hide {
+  visibility: hidden;
+}
+.visib {
+  visibility: visible;
+}
+.show {
+  display: block;
+}
+
+section {
+  background-color: var(--c2);
+}
+.selectBtnsContainer {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.selectBtn {
+  width: 150px;
+  height: 55px;
+  border-radius: 15px;
+  color: var(--c1);
+  background-color: var(--mc);
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+.selectBtn:hover {
+  scale: 1.15;
+  background-color: var(--c1);
+  color: var(--c2);
+}
+
+#counterBtns2{
+  transform: translateY(-90px);
+}
+#counterBtns3{
+  transform: translateY(-180px);
+}
+#counterBtns4{
+  transform: translateY(-270px);
+}
+#counterBtns5{
+  transform: translateY(-360px);
+}
+#counterBtns6{
+  transform: translateY(-450px);
+}
+
+#tasBtn6 {
+  width: 50%;
+}
+
+/* Zekr Counter */
+.SelectedItemContainer1 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+#SelectedItemContainer2 {
+  height: 65px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+}
+#SelectedItem {
+  width: 90%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Counter */
+
+.counterContainer1 {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+}
+#counterContainer2 {
+  height: 65px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+}
+#SelectedItem2 {
+  width: 90%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.buttons {
+  display: flex;
+  gap: 40px;
+}
+.counter button {
+  width: 100px;
+  height: 50px;
+  border-radius: 11px;
+  outline: none;
+  border: none;
+  background-color: var(--mc);
+  color: var(--c1);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.counter button:hover {
+  scale: 1.2;
+}
+
+@media (max-width: 868px) {
+  #tasBtn6 {
+    width: 90%;
+    font-size: .85rem;
+  }
+  .selectBtn {
+    height: 35px;
+  }
+  #SelectedItemContainer2{
+    width: 330px;
+    font-size: 0.9rem;
+  }
+}

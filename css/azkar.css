@@ -1,0 +1,344 @@
+:root {
+  --mc: #027fff;
+  --sc: #2c3e50;
+  --c1: #faf7ef;
+  --c2: #072a40;
+  --c3: #188ca5;
+  --c4: #19b7bd;
+  --c5: #76d668;
+  --c6: #8baccd;
+  --c7: #ff0000;
+  font-size: 20px;
+}
+section {
+  background-color: var(--c2);
+}
+.btn {
+  width: 200px;
+  height: 70px;
+  font-size: 1.2rem;
+  color: var(--c1);
+  background-color: var(--mc);
+  border-radius: 15px;
+  font-weight: 600;
+  border: 1px solid var(--c1);
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: fixed;
+}
+.btn:hover {
+  scale: 1.1;
+  background-color: var(--c1);
+  color: var(--c2);
+  border: 1px solid var(--mc);
+}
+
+/* Azkar Choosen Buttons */
+.buttonsContainer {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+}
+.selectBtn {
+  width: 320px;
+  height: 55px;
+  border-radius: 15px;
+  color: var(--c1);
+  background-color: var(--mc);
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  flex: 1 0 30%;
+  margin: 0 21px;
+}
+.selectBtn:hover {
+  scale: 1.05;
+  background-color: var(--c1);
+  color: var(--c2);
+}
+
+/* Movement Buttons (Next / Previous) */
+.movementBtns {
+  padding: 35px;
+  background-color: var(--c3);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.movementBtnsContainer {
+  background-color: var(--c2);
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 35px;
+}
+#previous-Btn {
+  width: 80px;
+  height: 40px;
+  outline-color: none;
+  border: none;
+  color: var(--mc);
+  background-color: var(--c2);
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 15px 0px 0px 15px;
+  border-right: 5px solid var(--c4);
+  font-size: 1.5rem;
+  transition: 0.4s;
+}
+#next-Btn {
+  width: 80px;
+  height: 40px;
+  outline-color: none;
+  border: none;
+  color: var(--mc);
+  background-color: var(--c2);
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 0px 15px 15px 0px;
+  border-left: 5px solid var(--c4);
+  font-size: 1.5rem;
+  transition: 0.4s;
+}
+#next-Btn:hover,
+#previous-Btn:hover {
+  scale: 1.15;
+}
+
+/* ! content display  */
+.card {
+  width: 85%;
+  height: 80%;
+  border-radius: 30px;
+  /* From https://css.glass */
+  background: rgba(22, 178, 199, 0.48);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 3px solid rgba(255, 255, 255, 0.69);
+  display: flex;
+}
+.mainContainer {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.secondContainer {
+  color: var(--c2);
+  width: 90%;
+  height: 80%;
+  background-color: var(--sc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-radius: 45px 45px 0 0;
+}
+.nestedContainer {
+  color: var(--c1);
+  border: 2px solid black;
+  width: 90%;
+  height: 90%;
+  margin: 20px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  font-size: 1.5rem;
+}
+#info-content {
+  position: absolute;
+  color: #fff;
+}
+#zekr-info-content {
+  position: absolute;
+  right: 8%;
+  width: 100%;
+  max-width: 90%;
+  height: 50px;
+  color: #fff;
+  top: 70%;
+  text-align: right;
+  font-size: 1rem;
+  color: var(--c5);
+}
+
+/* ? side button  */
+.azkarBtn {
+  width: 90%;
+  height: 10%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--c3);
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--c1);
+  font-size: 1rem;
+}
+.azkarBtn:hover {
+  scale: 1.1;
+}
+
+/** Counter */
+#progress-num {
+  color: white;
+}
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid white;
+  width: 250px;
+  border-radius: 25px;
+}
+#display-items {
+  font-size: 1.2rem;
+}
+.basmala {
+  color: #76d668;
+}
+.basmala2,
+.a3oz,
+.surah-end {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff0000;
+}
+.surah-btn-container {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.surah-btn {
+  position: absolute;
+  left: 40%;
+  top: 35%;
+}
+.surah-title{
+  color: var(--mc);
+}
+
+
+@media (max-width: 800px) {
+  .buttonsContainer {
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .selectBtn {
+    font-size: 0.75rem;
+    width: 80%;
+    height: 35px;
+    flex: 0 0 90%;
+  }
+  #text-content,
+  #zekr-info-content {
+    font-size: 0.9rem;
+  }
+  #zekr-info-content {
+    max-width: 80%;
+    right: 10%;
+    font-size: 0.65rem;
+    top: 74%;
+    color: var(--c4);
+  }
+  #progress-num {
+    font-size: 0.7rem;
+  }
+  .progress-container {
+    width: 25%;
+  }
+  #next-Btn,
+  #previous-Btn {
+    scale: 0.8;
+  }
+  #next-Btn:hover,
+  #previous-Btn:hover {
+    scale: 0.9;
+  }
+  .movementBtnsContainer {
+    width: 100%;
+  }
+  .azkarBtn {
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--c3);
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--c1);
+    font-size: 1rem;
+  }
+  .azkarBtn:hover {
+    scale: 1.1;
+  }
+  .nestedContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mainContainer {
+    height: 750px;
+  }
+  .surah-btn {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+  .btn{
+    width: 150px;
+    height: 50px;
+    font-size: 0.85rem;
+  }
+  .movementBtnsContainer{
+    height: 45px;
+  }
+  .movementBtns{
+    width: 100%;
+
+  }
+  #display-items{
+    font-size: 0.7rem;
+  }
+  #next-Btn,
+  #previous-Btn{
+    font-size: 1rem;
+    width: 60px;
+    padding-top: 3px;
+  }
+}

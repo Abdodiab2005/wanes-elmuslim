@@ -1,0 +1,94 @@
+* {
+  font-family: "Vazirmatn", sans-serif;
+}
+:root {
+  --mc: #027fff;
+  --sc: #2c3e50;
+  --c1: #faf7ef;
+  --c2: #072a40;
+  --c3: #188ca5;
+  --c4: #19b7bd;
+  --c5: #76d668;
+  --c6: #8baccd;
+  --c7: #ff0000;
+  font-size: 20px;
+}
+section {
+  background-color: var(--sc);
+}
+.helloMsg {
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px;
+  color: var(--c1);
+}
+.tasbehSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.img1 {
+  height: 250px;
+  display: inline;
+  border: 2px solid white;
+}
+.img2 {
+  height: 250px;
+  display: inline;
+  border: 2px solid white;
+}
+.img4 {
+  height: 400px;
+  border: 2px solid white;
+}
+.paraMsg {
+  font-size: 1.5rem;
+  color: var(--c1);
+  font-weight: 600;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+#go1,
+#go2 {
+  height: 76px;
+  width: 150px;
+  color: var(--c1);
+  background-color: var(--mc);
+  border-radius: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 20px;
+  transition: 0.3s;
+}
+#go1:hover,
+#go2:hover {
+  scale: 1.1;
+  background-color: var(--c1);
+  color: var(--mc);
+}
+@media (max-width: 868px) {
+  .img1 {
+    height: 100%;
+    width: 100%;
+    display: inline;
+  }
+  .img2 {
+    height: 100%;
+    width: 100%;
+    display: inline;
+  }
+  .img4 {
+    height: 100%;
+    width: 100%;
+  }
+  .paraMsg {
+    font-size: 1rem;
+  }
+  .helloMsg {
+    font-size: 2rem;
+  }
+}
